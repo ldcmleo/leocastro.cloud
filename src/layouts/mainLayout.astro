@@ -1,0 +1,21 @@
+---
+import "../styles/global.css";
+const { Title } = Astro.props;
+---
+
+<html lang="es" class="dark">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>{Title}</title>
+    </head>
+    <body class="bg-slate-200 text-black dark:bg-[#020202] dark:text-white">
+        <main class="max-w-162.5 mx-auto">
+            <header></header>
+            <slot />
+        </main>
+    </body>
+</html>
