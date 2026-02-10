@@ -1,0 +1,28 @@
+---
+import { getCollection } from "astro:content";
+
+const posts = await getCollection("blog");
+---
+
+<section class="border-x border-[#a9b4c6] border-dashed">
+    <div
+        class="pt-16 px-4 pb-4 border-b border-[#a9b4c6] border-dashed relative"
+    >
+        <div class="bg-square"></div>
+        <h1 class="text-4xl">Publicaciones</h1>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2">
+        {
+            posts.map((post) => (
+                <a
+                    class="w-full hover:dark:bg-neutral-900/40 hover:bg-neutral-200/40"
+                    href={`/posts/${post.id}`}
+                >
+                    <article class="h-64">
+                        <h1>{post.data.title}</h1>
+                    </article>
+                </a>
+            ))
+        }
+    </div>
+</section>
