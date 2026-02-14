@@ -13,13 +13,26 @@ const posts = await getCollection("blog");
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2">
         {
-            posts.map((post) => (
+            posts.map((post, index) => (
                 <a
-                    class="w-full hover:dark:bg-neutral-900/40 hover:bg-neutral-200/40"
+                    class={`w-full hover:dark:bg-neutral-900/60 hover:bg-neutral-100/60 border-b border-[#a9b4c6] border-dashed ${(index + 1) % 2 == 1 ? "md:border-r" : ""}`}
                     href={`/posts/${post.id}`}
                 >
-                    <article class="h-64">
-                        <h1>{post.data.title}</h1>
+                    <article class="h-80 py-8 px-12 flex flex-col justify-between">
+                        <div>
+                            <span class="block text-stone-700 bold text-right">
+                                {Intl.DateTimeFormat("en-US", {
+                                    month: "short",
+                                    day: "numeric",
+                                    year: "numeric",
+                                }).format(post.data.pubDate)}
+                            </span>
+                            <h1 class="bold text-md md:text-lg pt-4">
+                                {post.data.title}
+                            </h1>
+                            <p class="text-sm">{post.data.description}</p>
+                        </div>
+                        <span>Ver más</span>
                     </article>
                 </a>
             ))

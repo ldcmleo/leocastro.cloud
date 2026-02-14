@@ -56,13 +56,13 @@ const { Content } = await render(post);
                         <div class="bg-square"></div>
                         <h1 class="text-4xl">{post.data.title}</h1>
                     </div>
-                    <div class="px-4 py-16">
+                    <div class="px-24 pt-8 pb-16">
                         <Content />
                     </div>
                 </article>
             </section>
         </main>
-        <NavMenu client:visible />
+        <NavMenu home={true} client:visible />
     </body>
 </html>
 <style is:global>
@@ -154,6 +154,54 @@ const { Content } = await render(post);
         font-family: "Tomorrow", sans-serif;
         font-weight: 400;
         font-style: normal;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        padding-top: 16px;
+        padding-bottom: 4px;
+    }
+
+    h1 {
+        font-size: 2.25rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.85rem;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+    }
+
+    ul {
+        list-style: disc;
+        list-style-position: outside;
+        padding-left: 1.5rem;
+    }
+
+    li > ul {
+        margin-left: 1.5rem;
+    }
+
+    pre {
+        padding: 16px;
+    }
+
+    a {
+        font-style: italic;
+        text-decoration: underline;
+        transition: ease-in-out 200ms;
+    }
+
+    a:hover {
+        color: #008236;
     }
 
     .license {

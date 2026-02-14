@@ -1,0 +1,42 @@
+---
+title: "Welcome to my blog"
+description: "This is a test blog"
+pubDate: 2026-02-09
+relatedPosts:
+- about-me # references `src/data/blog/about-me.md`
+---
+Esto sería un encabezado 1
+===
+Esto sería un encabezado 2
+---
+
+# Este es un texto
+
+## Otro texto
+
+### Otro texto
+
+#### Otro texto
+
+- Elemento de lista 1
+- Elemento de lista 2
+    - Elemento de lista 3
+    - Elemento de lista 4
+        - Elemento de lista 5
+        - Elemento de lista 6
+
+[enlace en línea](http://www.limni.net)
+
+![Texto alternativo](/images/profile.webp)
+
+> Un país, una civilización se puede juzgar por la forma en que trata a sus animales.  — Mahatma Gandhi
+
+~~~js
+// Javascript code with syntax highlighting.
+var fun = function lang(l) {
+  dateformat.i18n = require('./lang/' + l);
+  return true;
+}; 
+~~~
+
+ñoream af adsfsd  dasf sdf sadfasfsdf   sdfasdfaetg  dsgfasdgwetr *dsfasd* **werawfe**
