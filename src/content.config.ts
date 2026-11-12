@@ -11,7 +11,7 @@ const blog = defineCollection({
         title: z.string(),
         description: z.string(),
         pubDate: z.coerce.date(),
-        relatedPosts: z.array(reference("blog")),
+        relatedPosts: z.array(reference("blog")).optional(),
     }),
 });
 

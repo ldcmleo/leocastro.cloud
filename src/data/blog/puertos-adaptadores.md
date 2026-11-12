@@ -2,8 +2,6 @@
 title: "Puertos y Adaptadores: cuando la buena arquitectura es una mala decisión"
 description: "En este articulo explico un poco de mi aprendizaje aplicando la arquitectura hexagonal, en un contexto erroneo"
 pubDate: 2026-02-13
-relatedPosts:
-- welcome
 ---
 En el transcurso de unos meses atrás implementé la arquitectura de Puertos y Adaptadores en una aplicación de escritorio “Sencilla” para Windows.
 

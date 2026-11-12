@@ -16,7 +16,7 @@ const posts = await getCollection("blog");
             posts.map((post, index) => (
                 <a
                     class={`w-full hover:dark:bg-neutral-900/60 hover:bg-neutral-100/60 border-b border-[#a9b4c6] border-dashed ${(index + 1) % 2 == 1 ? "md:border-r" : ""}`}
-                    href={`/posts/${post.id}`}
+                    href={`/blog/posts/${post.id}`}
                 >
                     <article class="h-80 py-8 px-12 flex flex-col justify-between">
                         <div>

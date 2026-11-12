@@ -1,0 +1,80 @@
+---
+---
+
+<form
+    action="https://formspree.io/f/xvkaowgk"
+    method="POST"
+    class="space-y-6"
+>
+    <div>
+        <label for="nombre" class="block text-sm font-medium mb-2 opacity-80">
+            Nombre
+        </label>
+        <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            required
+            class="w-full px-4 py-3 bg-transparent border border-[#a9b4c6] focus:border-[#883AEA] focus:outline-none transition-colors duration-300"
+            placeholder="Tu nombre"
+        />
+    </div>
+
+    <div>
+        <label for="email" class="block text-sm font-medium mb-2 opacity-80">
+            Email
+        </label>
+        <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            class="w-full px-4 py-3 bg-transparent border border-[#a9b4c6] focus:border-[#883AEA] focus:outline-none transition-colors duration-300"
+            placeholder="tu@email.com"
+        />
+    </div>
+
+    <div>
+        <label for="servicio" class="block text-sm font-medium mb-2 opacity-80">
+            Servicio de interés
+        </label>
+        <select
+            id="servicio"
+            name="servicio"
+            class="w-full px-4 py-3 bg-transparent border border-[#a9b4c6] focus:border-[#883AEA] focus:outline-none transition-colors duration-300"
+        >
+            <option value="" class="bg-[#080808]">Selecciona un servicio</option>
+            <option value="chatbots-ia" class="bg-[#080808]">Chatbots Inteligentes con IA</option>
+            <option value="desarrollo-software" class="bg-[#080808]">Desarrollo de Software</option>
+            <option value="diseno-web" class="bg-[#080808]">Diseño de Páginas Web</option>
+            <option value="infraestructura" class="bg-[#080808]">Gestión de Infraestructura</option>
+            <option value="software-medida" class="bg-[#080808]">Software a la Medida</option>
+            <option value="otro" class="bg-[#080808]">Otro</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="mensaje" class="block text-sm font-medium mb-2 opacity-80">
+            Mensaje
+        </label>
+        <textarea
+            id="mensaje"
+            name="mensaje"
+            rows="5"
+            required
+            class="w-full px-4 py-3 bg-transparent border border-[#a9b4c6] focus:border-[#883AEA] focus:outline-none transition-colors duration-300 resize-vertical"
+            placeholder="Cuéntame sobre tu proyecto..."
+        ></textarea>
+    </div>
+
+    <button
+        type="submit"
+        class="w-full px-8 py-4 bg-[#883AEA] text-white font-medium hover:bg-[#7a2fe0] transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#883AEA] focus:ring-offset-2 dark:focus:ring-offset-[#080808]"
+    >
+        Enviar mensaje
+    </button>
+
+    <p class="text-xs text-center opacity-50">
+        Te respondo en menos de 24 horas.
+    </p>
+</form>
